@@ -10,7 +10,7 @@
 
 const NSString *operators = @"+-/X";
 const NSString *numbers    = @"0123456789.";
-const NSString *memory    = @"MRMCM+";
+const NSString *memory    = @"MSMRMCM+";
 BOOL lastButtonWasOperator = YES;
 int N = 0;
 
@@ -165,6 +165,9 @@ int N = 0;
     }
     
     else if ([memory rangeOfString: buttonPressed].length) {
+        if ([buttonPressed isEqual:@"MS"]) {
+            self.calcMemory = [[self displayValue] doubleValue];
+        }
         if ([buttonPressed isEqual:@"M+"]) {
             self.calcMemory = self.calcMemory + [[self displayValue] doubleValue];
         }

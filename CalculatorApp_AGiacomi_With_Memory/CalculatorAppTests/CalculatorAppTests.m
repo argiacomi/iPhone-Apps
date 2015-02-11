@@ -192,7 +192,7 @@
     [calculator calculatorOperations:@"1"];
     [calculator calculatorOperations:@"5"];
     [calculator calculatorOperations:@"="];
-    [calculator calculatorOperations:@"M+"];
+    [calculator calculatorOperations:@"MS"];
     [calculator calculatorOperations:@"C"];
     [calculator calculatorOperations:@"C"];
     [calculator calculatorOperations:@"5"];
@@ -208,7 +208,7 @@
     [calculator calculatorOperations:@"+"];
     [calculator calculatorOperations:@"2"];
     [calculator calculatorOperations:@"="];
-    [calculator calculatorOperations:@"M+"];
+    [calculator calculatorOperations:@"MS"];
     [calculator calculatorOperations:@"+"];
     [calculator calculatorOperations:@"2"];
     [calculator calculatorOperations:@"="];
@@ -230,7 +230,7 @@
     [calculator calculatorOperations:@"1"];
     [calculator calculatorOperations:@"5"];
     [calculator calculatorOperations:@"="];
-    [calculator calculatorOperations:@"M+"];
+    [calculator calculatorOperations:@"MS"];
     [calculator calculatorOperations:@"C"];
     [calculator calculatorOperations:@"C"];
     [calculator calculatorOperations:@"MC"];
