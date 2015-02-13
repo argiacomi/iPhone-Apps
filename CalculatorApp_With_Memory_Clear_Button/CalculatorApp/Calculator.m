@@ -12,7 +12,7 @@ const NSString *operators = @"+-/X";
 const NSString *numbers    = @"0123456789.";
 const NSString *memory    = @"MSMRMCM+";
 BOOL lastButtonWasOperator = YES;
-int N = 0;
+int n = 0;
 
 
 @interface Calculator ()
@@ -62,9 +62,9 @@ int N = 0;
     }
     
     else if ([operators rangeOfString:buttonPressed].length || [buttonPressed isEqual:@"="]) {
-        if (N > 0 && ![buttonPressed isEqualToString:@"="]) {
+        if (n > 0 && ![buttonPressed isEqualToString:@"="]) {
             self.operator = nil;
-            N = 0;
+            n = 0;
         }
         
         if (!self.operator && ![buttonPressed isEqualToString:@"="]) {
@@ -74,17 +74,16 @@ int N = 0;
             
         }
         else {
-            NSLog (@"%@", self.operator);
             if (self.operator) {
                 double operand2 = [[self displayValue] doubleValue];
                 
-                if (N == 0) {
+                if (n == 0) {
                     self.recursive = operand2;
-                    N++;
+                    n++;
                 }
                 
                 if (![buttonPressed isEqual:@"="]) {
-                    N = 0;
+                    n = 0;
                     if (_lastButtonPressed == buttonPressed) {
                         
                     }
@@ -113,7 +112,6 @@ int N = 0;
                 
                 if ([buttonPressed isEqual:@"="]) {
                     
-                    NSLog (@"%f", self.recursive);
                     if ([self.operator isEqual:@"+"]) {
                         self.operand = self.operand + self.recursive;
                     }
@@ -125,7 +123,6 @@ int N = 0;
                     }
                     else if ([self.operator isEqual:@"/"]) {
                         self.operand = self.operand / self.recursive;
-                        NSLog (@"%f",self.operand);
                     }
                     if (self.operand == INFINITY) {
                         [self.display setString:@"Error"];
@@ -161,12 +158,14 @@ int N = 0;
     else if ([buttonPressed isEqualToString:@"C"]) {
         [self.display setString:@"0"];
         lastButtonWasOperator = YES;
+        n = 0;
     }
     
     else if ([buttonPressed isEqualToString:@"AC"]) {
         [self.display setString:@"0"];
         self.operator = nil;
         lastButtonWasOperator = YES;
+        n = 0;
     }
     
     else if ([memory rangeOfString: buttonPressed].length) {

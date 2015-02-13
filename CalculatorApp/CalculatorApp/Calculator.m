@@ -61,6 +61,7 @@ int n = 0;
         }
     }
 
+    
     else if ([operators rangeOfString:buttonPressed].length || [buttonPressed isEqual:@"="]) {
         if (n > 0 && ![buttonPressed isEqualToString:@"="]) {
             self.operator = nil;
@@ -74,7 +75,6 @@ int n = 0;
             
         }
         else {
-            NSLog (@"%@", self.operator);
             if (self.operator) {
                 double operand2 = [[self displayValue] doubleValue];
                 
@@ -88,7 +88,7 @@ int n = 0;
                     if (_lastButtonPressed == buttonPressed) {
                         
                     }
-                        else {
+                    else {
                         if ([self.operator isEqual:@"+"]) {
                             self.operand = self.operand + operand2;
                         }
@@ -113,7 +113,6 @@ int n = 0;
                 
                 if ([buttonPressed isEqual:@"="]) {
                     
-                    NSLog (@"%f", self.recursive);
                     if ([self.operator isEqual:@"+"]) {
                         self.operand = self.operand + self.recursive;
                     }
@@ -125,7 +124,6 @@ int n = 0;
                     }
                     else if ([self.operator isEqual:@"/"]) {
                         self.operand = self.operand / self.recursive;
-                        NSLog (@"%f",self.operand);
                     }
                     if (self.operand == INFINITY) {
                         [self.display setString:@"Error"];
@@ -137,7 +135,7 @@ int n = 0;
                 }
                 
             }
-
+            
             self.operator = ([buttonPressed isEqual:@"="])? self.operator : buttonPressed;
         }
         lastButtonWasOperator = YES;
@@ -164,11 +162,13 @@ int n = 0;
             self.operator = nil;
             lastButtonWasOperator = YES;
             _lastButtonPressed = buttonPressed;
+            n = 0;
         }
         else {
             [self.display setString:@"0"];
             lastButtonWasOperator = YES;
             _lastButtonPressed = buttonPressed;
+            n = 0;
         }
     }
     
