@@ -105,7 +105,7 @@
     [calculator calculatorOperations:@"+"];
     [calculator calculatorOperations:@"7"];
     [calculator calculatorOperations:@"C"];
-    [calculator calculatorOperations:@"C"];
+    [calculator calculatorOperations:@"AC"];
     XCTAssertTrue([[calculator displayValue] isEqualToString:@"0"], @"");
     NSLog(@"%@ end", self.name);
 }
@@ -194,7 +194,7 @@
     [calculator calculatorOperations:@"="];
     [calculator calculatorOperations:@"MS"];
     [calculator calculatorOperations:@"C"];
-    [calculator calculatorOperations:@"C"];
+    [calculator calculatorOperations:@"AC"];
     [calculator calculatorOperations:@"5"];
     [calculator calculatorOperations:@"+"];
     [calculator calculatorOperations:@"MR"];
@@ -232,7 +232,7 @@
     [calculator calculatorOperations:@"="];
     [calculator calculatorOperations:@"MS"];
     [calculator calculatorOperations:@"C"];
-    [calculator calculatorOperations:@"C"];
+    [calculator calculatorOperations:@"AC"];
     [calculator calculatorOperations:@"MC"];
     [calculator calculatorOperations:@"5"];
     [calculator calculatorOperations:@"+"];

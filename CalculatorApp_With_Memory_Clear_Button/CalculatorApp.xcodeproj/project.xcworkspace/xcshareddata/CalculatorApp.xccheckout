@@ -14,7 +14,7 @@
 		<string>https://github.com/argiacomi/iPhone-Apps.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>CalculatorApp_AGiacomi_With_Memory/CalculatorApp.xcodeproj</string>
+	<string>CalculatorApp_With_Memory_Clear_Button/CalculatorApp.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>A5523B0E107279B3AA3C807B5B5B44BD933580C9</key>
