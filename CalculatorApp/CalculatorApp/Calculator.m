@@ -12,7 +12,7 @@ const NSString *operators = @"+-/X";
 const NSString *numbers    = @"0123456789.";
 const NSString *memory    = @"MRMCM+";
 BOOL lastButtonWasOperator = YES;
-int N = 0;
+int n = 0;
 
 
 @interface Calculator ()
@@ -51,6 +51,10 @@ int N = 0;
             lastButtonWasOperator = NO;
             _lastButtonPressed = buttonPressed;
         }
+        else if ([_lastButtonPressed isEqual: @"0"] && [[self displayValue] doubleValue] == 0){
+            [self.display setString:buttonPressed];
+            _lastButtonPressed = buttonPressed;
+        }
         else {
             [self.display appendString:buttonPressed];
             _lastButtonPressed = buttonPressed;
@@ -58,9 +62,9 @@ int N = 0;
     }
 
     else if ([operators rangeOfString:buttonPressed].length || [buttonPressed isEqual:@"="]) {
-        if (N > 0 && ![buttonPressed isEqualToString:@"="]) {
+        if (n > 0 && ![buttonPressed isEqualToString:@"="]) {
             self.operator = nil;
-            N = 0;
+            n = 0;
         }
         
         if (!self.operator && ![buttonPressed isEqualToString:@"="]) {
@@ -74,13 +78,13 @@ int N = 0;
             if (self.operator) {
                 double operand2 = [[self displayValue] doubleValue];
                 
-                if (N == 0) {
+                if (n == 0) {
                     self.recursive = operand2;
-                    N++;
+                    n++;
                 }
                 
                 if (![buttonPressed isEqual:@"="]) {
-                    N = 0;
+                    n = 0;
                     if (_lastButtonPressed == buttonPressed) {
                         
                     }
@@ -155,13 +159,17 @@ int N = 0;
     }
     
     else if ([buttonPressed isEqualToString:@"C"]) {
-        if (!self.display) {
+        if (_lastButtonPressed == buttonPressed) {
+            [self.display setString:@"0"];
             self.operator = nil;
+            lastButtonWasOperator = YES;
+            _lastButtonPressed = buttonPressed;
         }
         else {
             [self.display setString:@"0"];
+            lastButtonWasOperator = YES;
+            _lastButtonPressed = buttonPressed;
         }
-        lastButtonWasOperator = YES;
     }
     
 }

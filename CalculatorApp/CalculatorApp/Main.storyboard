@@ -163,7 +163,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonPressed:" destination="19V-CT-kvK" eventType="touchUpInside" id="Hsy-uX-Qn9"/>
+                                    <action selector="buttonPressed:" destination="19V-CT-kvK" eventType="touchUpInside" id="G6F-ou-DlP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pvf-4v-Xe3">
@@ -242,7 +242,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kk7-ue-ofM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="161" y="-115"/>
+            <point key="canvasLocation" x="-900" y="-971"/>
         </scene>
     </scenes>
     <resources>

@@ -51,6 +51,10 @@ int N = 0;
             lastButtonWasOperator = NO;
             _lastButtonPressed = buttonPressed;
         }
+        else if ([_lastButtonPressed isEqual: @"0"] && [[self displayValue] doubleValue] == 0){
+            [self.display setString:buttonPressed];
+            _lastButtonPressed = buttonPressed;
+        }
         else {
             [self.display appendString:buttonPressed];
             _lastButtonPressed = buttonPressed;
@@ -155,12 +159,13 @@ int N = 0;
     }
     
     else if ([buttonPressed isEqualToString:@"C"]) {
-        if (!self.display) {
-            self.operator = nil;
-        }
-        else {
-            [self.display setString:@"0"];
-        }
+        [self.display setString:@"0"];
+        lastButtonWasOperator = YES;
+    }
+    
+    else if ([buttonPressed isEqualToString:@"AC"]) {
+        [self.display setString:@"0"];
+        self.operator = nil;
         lastButtonWasOperator = YES;
     }
     

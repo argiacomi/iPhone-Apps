@@ -9,11 +9,13 @@
 #import "CalculatorViewController.h"
 #import "Calculator.h"
 
+int i = 0;
+
 @interface CalculatorViewController ()
 @property (strong) Calculator *calculator;
 
-
 @end
+
 
 @implementation CalculatorViewController
 
@@ -34,11 +36,10 @@
 
     UIButton *buttonPressed = (UIButton *)sender;
     pressed = buttonPressed.titleLabel.text;
-
     
     [self.calculator calculatorOperations:pressed];
     calculatorDisplay.text = [self.calculator displayValue];
-    
+
 }
 
 
