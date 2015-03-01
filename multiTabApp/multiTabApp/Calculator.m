@@ -2,8 +2,8 @@
 //  Calculator.m
 //  CalculatorApp
 //
-//  Created by William McDermid on 2/4/15.
-//  Copyright (c) 2015 William McDermid. All rights reserved.
+//  Created by Andrew Giacomi on 2/4/15.
+//  Copyright (c) 2015 Andrew Giacomi. All rights reserved.
 //
 
 #import "Calculator.h"

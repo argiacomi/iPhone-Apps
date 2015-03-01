@@ -3,11 +3,12 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "topRow_bg.png"
+      "filename" : "Calc 2.png"
     },
     {
       "idiom" : "universal",
-      "scale" : "2x"
+      "scale" : "2x",
+      "filename" : "Calc.png"
     },
     {
       "idiom" : "universal",

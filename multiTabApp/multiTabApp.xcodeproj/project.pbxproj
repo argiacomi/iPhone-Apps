@@ -1,0 +1,456 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		768984171AA2F78100F4006A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 768984161AA2F78100F4006A /* main.m */; };
+		7689841A1AA2F78100F4006A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 768984191AA2F78100F4006A /* AppDelegate.m */; };
+		7689841D1AA2F78100F4006A /* multiTabApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7689841B1AA2F78100F4006A /* multiTabApp.xcdatamodeld */; };
+		768984201AA2F78100F4006A /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7689841F1AA2F78100F4006A /* ScrollViewController.m */; };
+		768984251AA2F78100F4006A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 768984241AA2F78100F4006A /* Images.xcassets */; };
+		768984281AA2F78100F4006A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 768984261AA2F78100F4006A /* LaunchScreen.xib */; };
+		768984341AA2F78100F4006A /* multiTabAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 768984331AA2F78100F4006A /* multiTabAppTests.m */; };
+		768984421AA2F80500F4006A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7689843D1AA2F80500F4006A /* Main.storyboard */; };
+		768984431AA2F80500F4006A /* CalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7689843F1AA2F80500F4006A /* CalculatorViewController.m */; };
+		768984441AA2F80500F4006A /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 768984411AA2F80500F4006A /* Calculator.m */; };
+		768984471AA3168300F4006A /* ButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 768984461AA3168300F4006A /* ButtonViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7689842E1AA2F78100F4006A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 768984091AA2F78100F4006A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 768984101AA2F78100F4006A;
+			remoteInfo = multiTabApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		768984111AA2F78100F4006A /* multiTabApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = multiTabApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		768984151AA2F78100F4006A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		768984161AA2F78100F4006A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		768984181AA2F78100F4006A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		768984191AA2F78100F4006A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7689841C1AA2F78100F4006A /* multiTabApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = multiTabApp.xcdatamodel; sourceTree = "<group>"; };
+		7689841E1AA2F78100F4006A /* ScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollViewController.h; sourceTree = "<group>"; };
+		7689841F1AA2F78100F4006A /* ScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollViewController.m; sourceTree = "<group>"; };
+		768984241AA2F78100F4006A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		768984271AA2F78100F4006A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		7689842D1AA2F78100F4006A /* multiTabAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = multiTabAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		768984321AA2F78100F4006A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		768984331AA2F78100F4006A /* multiTabAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = multiTabAppTests.m; sourceTree = "<group>"; };
+		7689843D1AA2F80500F4006A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		7689843E1AA2F80500F4006A /* CalculatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorViewController.h; sourceTree = "<group>"; };
+		7689843F1AA2F80500F4006A /* CalculatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorViewController.m; sourceTree = "<group>"; };
+		768984401AA2F80500F4006A /* Calculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
+		768984411AA2F80500F4006A /* Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
+		768984451AA3163400F4006A /* ButtonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ButtonViewController.h; sourceTree = "<group>"; };
+		768984461AA3168300F4006A /* ButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7689840E1AA2F78100F4006A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7689842A1AA2F78100F4006A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		768984081AA2F78100F4006A = {
+			isa = PBXGroup;
+			children = (
+				768984131AA2F78100F4006A /* multiTabApp */,
+				768984301AA2F78100F4006A /* multiTabAppTests */,
+				768984121AA2F78100F4006A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		768984121AA2F78100F4006A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				768984111AA2F78100F4006A /* multiTabApp.app */,
+				7689842D1AA2F78100F4006A /* multiTabAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		768984131AA2F78100F4006A /* multiTabApp */ = {
+			isa = PBXGroup;
+			children = (
+				7689843D1AA2F80500F4006A /* Main.storyboard */,
+				7689843E1AA2F80500F4006A /* CalculatorViewController.h */,
+				7689843F1AA2F80500F4006A /* CalculatorViewController.m */,
+				768984401AA2F80500F4006A /* Calculator.h */,
+				768984411AA2F80500F4006A /* Calculator.m */,
+				768984451AA3163400F4006A /* ButtonViewController.h */,
+				768984461AA3168300F4006A /* ButtonViewController.m */,
+				7689841E1AA2F78100F4006A /* ScrollViewController.h */,
+				7689841F1AA2F78100F4006A /* ScrollViewController.m */,
+				768984241AA2F78100F4006A /* Images.xcassets */,
+				768984261AA2F78100F4006A /* LaunchScreen.xib */,
+				7689841B1AA2F78100F4006A /* multiTabApp.xcdatamodeld */,
+				768984141AA2F78100F4006A /* Supporting Files */,
+			);
+			path = multiTabApp;
+			sourceTree = "<group>";
+		};
+		768984141AA2F78100F4006A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				768984181AA2F78100F4006A /* AppDelegate.h */,
+				768984191AA2F78100F4006A /* AppDelegate.m */,
+				768984151AA2F78100F4006A /* Info.plist */,
+				768984161AA2F78100F4006A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		768984301AA2F78100F4006A /* multiTabAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				768984331AA2F78100F4006A /* multiTabAppTests.m */,
+				768984311AA2F78100F4006A /* Supporting Files */,
+			);
+			path = multiTabAppTests;
+			sourceTree = "<group>";
+		};
+		768984311AA2F78100F4006A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				768984321AA2F78100F4006A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		768984101AA2F78100F4006A /* multiTabApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 768984371AA2F78100F4006A /* Build configuration list for PBXNativeTarget "multiTabApp" */;
+			buildPhases = (
+				7689840D1AA2F78100F4006A /* Sources */,
+				7689840E1AA2F78100F4006A /* Frameworks */,
+				7689840F1AA2F78100F4006A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = multiTabApp;
+			productName = multiTabApp;
+			productReference = 768984111AA2F78100F4006A /* multiTabApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7689842C1AA2F78100F4006A /* multiTabAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7689843A1AA2F78100F4006A /* Build configuration list for PBXNativeTarget "multiTabAppTests" */;
+			buildPhases = (
+				768984291AA2F78100F4006A /* Sources */,
+				7689842A1AA2F78100F4006A /* Frameworks */,
+				7689842B1AA2F78100F4006A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7689842F1AA2F78100F4006A /* PBXTargetDependency */,
+			);
+			name = multiTabAppTests;
+			productName = multiTabAppTests;
+			productReference = 7689842D1AA2F78100F4006A /* multiTabAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		768984091AA2F78100F4006A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Andrew Giacomi";
+				TargetAttributes = {
+					768984101AA2F78100F4006A = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					7689842C1AA2F78100F4006A = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 768984101AA2F78100F4006A;
+					};
+				};
+			};
+			buildConfigurationList = 7689840C1AA2F78100F4006A /* Build configuration list for PBXProject "multiTabApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 768984081AA2F78100F4006A;
+			productRefGroup = 768984121AA2F78100F4006A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				768984101AA2F78100F4006A /* multiTabApp */,
+				7689842C1AA2F78100F4006A /* multiTabAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7689840F1AA2F78100F4006A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				768984421AA2F80500F4006A /* Main.storyboard in Resources */,
+				768984281AA2F78100F4006A /* LaunchScreen.xib in Resources */,
+				768984251AA2F78100F4006A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7689842B1AA2F78100F4006A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7689840D1AA2F78100F4006A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7689841D1AA2F78100F4006A /* multiTabApp.xcdatamodeld in Sources */,
+				7689841A1AA2F78100F4006A /* AppDelegate.m in Sources */,
+				768984471AA3168300F4006A /* ButtonViewController.m in Sources */,
+				768984431AA2F80500F4006A /* CalculatorViewController.m in Sources */,
+				768984441AA2F80500F4006A /* Calculator.m in Sources */,
+				768984201AA2F78100F4006A /* ScrollViewController.m in Sources */,
+				768984171AA2F78100F4006A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		768984291AA2F78100F4006A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				768984341AA2F78100F4006A /* multiTabAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7689842F1AA2F78100F4006A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 768984101AA2F78100F4006A /* multiTabApp */;
+			targetProxy = 7689842E1AA2F78100F4006A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		768984261AA2F78100F4006A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				768984271AA2F78100F4006A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		768984351AA2F78100F4006A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		768984361AA2F78100F4006A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		768984381AA2F78100F4006A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = multiTabApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		768984391AA2F78100F4006A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = multiTabApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7689843B1AA2F78100F4006A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = multiTabAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/multiTabApp.app/multiTabApp";
+			};
+			name = Debug;
+		};
+		7689843C1AA2F78100F4006A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = multiTabAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/multiTabApp.app/multiTabApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7689840C1AA2F78100F4006A /* Build configuration list for PBXProject "multiTabApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				768984351AA2F78100F4006A /* Debug */,
+				768984361AA2F78100F4006A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		768984371AA2F78100F4006A /* Build configuration list for PBXNativeTarget "multiTabApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				768984381AA2F78100F4006A /* Debug */,
+				768984391AA2F78100F4006A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7689843A1AA2F78100F4006A /* Build configuration list for PBXNativeTarget "multiTabAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7689843B1AA2F78100F4006A /* Debug */,
+				7689843C1AA2F78100F4006A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7689841B1AA2F78100F4006A /* multiTabApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7689841C1AA2F78100F4006A /* multiTabApp.xcdatamodel */,
+			);
+			currentVersion = 7689841C1AA2F78100F4006A /* multiTabApp.xcdatamodel */;
+			path = multiTabApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 768984091AA2F78100F4006A /* Project object */;
+}
