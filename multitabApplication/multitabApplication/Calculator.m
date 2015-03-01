@@ -10,7 +10,7 @@
 
 const NSString *operators = @"+-/X";
 const NSString *numbers    = @"0123456789.";
-const NSString *memory    = @"MSMRMCM+";
+const NSString *memory    = @"MRMCM+";
 BOOL lastButtonWasOperator = YES;
 int n = 0;
 
@@ -37,41 +37,30 @@ int n = 0;
 }
 
 - (void)calculatorOperations:(NSString *)buttonPressed{
-    
-    
+
+
     if ([numbers rangeOfString: buttonPressed].length) {
-        if ([self.display rangeOfString: buttonPressed].length && [buttonPressed isEqual:@"."]) {
-            
-            if (lastButtonWasOperator && [buttonPressed isEqual:@"."] ) {
-                [self.display setString: @"0"];
-                [self.display appendString: buttonPressed];
-                lastButtonWasOperator = NO;
-                _lastButtonPressed = buttonPressed;
-            }
+        if (lastButtonWasOperator && ![buttonPressed isEqual:@"."] ) {
+            [self.display setString: buttonPressed];
+            lastButtonWasOperator = NO;
+            _lastButtonPressed = buttonPressed;
         }
-        
+        else if (lastButtonWasOperator && [buttonPressed isEqual:@"."] ) {
+            [self.display setString: @"0"];
+            [self.display appendString: buttonPressed];
+            lastButtonWasOperator = NO;
+            _lastButtonPressed = buttonPressed;
+        }
+        else if ([_lastButtonPressed isEqual: @"0"] && [[self displayValue] doubleValue] == 0){
+            [self.display setString:buttonPressed];
+            _lastButtonPressed = buttonPressed;
+        }
         else {
-            if (lastButtonWasOperator && ![buttonPressed isEqual:@"."] ) {
-                [self.display setString: buttonPressed];
-                lastButtonWasOperator = NO;
-                _lastButtonPressed = buttonPressed;
-            }
-            else if (lastButtonWasOperator && [buttonPressed isEqual:@"."] ) {
-                [self.display setString: @"0"];
-                [self.display appendString: buttonPressed];
-                lastButtonWasOperator = NO;
-                _lastButtonPressed = buttonPressed;
-            }
-            else if ([_lastButtonPressed isEqual: @"0"] && [[self displayValue] doubleValue] == 0){
-                [self.display setString:buttonPressed];
-                _lastButtonPressed = buttonPressed;
-            }
-            else {
-                [self.display appendString:buttonPressed];
-                _lastButtonPressed = buttonPressed;
-            }
+            [self.display appendString:buttonPressed];
+            _lastButtonPressed = buttonPressed;
         }
     }
+
     
     else if ([operators rangeOfString:buttonPressed].length || [buttonPressed isEqual:@"="]) {
         if (n > 0 && ![buttonPressed isEqualToString:@"="]) {
@@ -151,14 +140,14 @@ int n = 0;
         }
         lastButtonWasOperator = YES;
     }
-    
+
     else if ([buttonPressed isEqual:@"+/-"]) {
         if ([[self displayValue] doubleValue] != 0) {
             double negSwitch  = [[self displayValue] doubleValue];
             negSwitch = negSwitch * -1;
             [self.display setString: [@(negSwitch) stringValue]];
         }
-        
+
     }
     
     else if ([buttonPressed isEqual:@"%"]) {
@@ -168,32 +157,21 @@ int n = 0;
     }
     
     else if ([buttonPressed isEqualToString:@"C"]) {
-        [self.display setString:@"0"];
-        lastButtonWasOperator = YES;
-        n = 0;
+        if (_lastButtonPressed == buttonPressed) {
+            [self.display setString:@"0"];
+            self.operator = nil;
+            lastButtonWasOperator = YES;
+            _lastButtonPressed = buttonPressed;
+            n = 0;
+        }
+        else {
+            [self.display setString:@"0"];
+            lastButtonWasOperator = YES;
+            _lastButtonPressed = buttonPressed;
+            n = 0;
+        }
     }
     
-    else if ([buttonPressed isEqualToString:@"AC"]) {
-        [self.display setString:@"0"];
-        self.operator = nil;
-        lastButtonWasOperator = YES;
-        n = 0;
-    }
-    
-    else if ([memory rangeOfString: buttonPressed].length) {
-        if ([buttonPressed isEqual:@"MS"]) {
-            self.calcMemory = [[self displayValue] doubleValue];
-        }
-        if ([buttonPressed isEqual:@"M+"]) {
-            self.calcMemory = self.calcMemory + [[self displayValue] doubleValue];
-        }
-        else if ([buttonPressed isEqual:@"MR"]) {
-            [self.display setString: [@(self.calcMemory) stringValue]];
-        }
-        else if ([buttonPressed isEqual:@"MC"]) {
-            self.calcMemory = 0;
-        }
-    }
 }
 
 

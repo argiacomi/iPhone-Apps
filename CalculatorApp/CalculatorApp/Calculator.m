@@ -40,24 +40,36 @@ int n = 0;
 
 
     if ([numbers rangeOfString: buttonPressed].length) {
-        if (lastButtonWasOperator && ![buttonPressed isEqual:@"."] ) {
-            [self.display setString: buttonPressed];
-            lastButtonWasOperator = NO;
-            _lastButtonPressed = buttonPressed;
+        if ([self.display rangeOfString: buttonPressed].length && [buttonPressed isEqual:@"."]) {
+            
+            if (lastButtonWasOperator && [buttonPressed isEqual:@"."] ) {
+                [self.display setString: @"0"];
+                [self.display appendString: buttonPressed];
+                lastButtonWasOperator = NO;
+                _lastButtonPressed = buttonPressed;
+            }
         }
-        else if (lastButtonWasOperator && [buttonPressed isEqual:@"."] ) {
-            [self.display setString: @"0"];
-            [self.display appendString: buttonPressed];
-            lastButtonWasOperator = NO;
-            _lastButtonPressed = buttonPressed;
-        }
-        else if ([_lastButtonPressed isEqual: @"0"] && [[self displayValue] doubleValue] == 0){
-            [self.display setString:buttonPressed];
-            _lastButtonPressed = buttonPressed;
-        }
+        
         else {
-            [self.display appendString:buttonPressed];
-            _lastButtonPressed = buttonPressed;
+            if (lastButtonWasOperator && ![buttonPressed isEqual:@"."] ) {
+                [self.display setString: buttonPressed];
+                lastButtonWasOperator = NO;
+                _lastButtonPressed = buttonPressed;
+            }
+            else if (lastButtonWasOperator && [buttonPressed isEqual:@"."] ) {
+                [self.display setString: @"0"];
+                [self.display appendString: buttonPressed];
+                lastButtonWasOperator = NO;
+                _lastButtonPressed = buttonPressed;
+            }
+            else if ([_lastButtonPressed isEqual: @"0"] && [[self displayValue] doubleValue] == 0){
+                [self.display setString:buttonPressed];
+                _lastButtonPressed = buttonPressed;
+            }
+            else {
+                [self.display appendString:buttonPressed];
+                _lastButtonPressed = buttonPressed;
+            }
         }
     }
 

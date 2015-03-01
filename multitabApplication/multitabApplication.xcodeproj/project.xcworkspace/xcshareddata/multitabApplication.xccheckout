@@ -5,16 +5,16 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>1E51C4A0-778B-4757-AB4F-BF8DF0C0D442</string>
+	<string>CD3BE7D9-576F-4E8F-A2A5-78DD96AB4B77</string>
 	<key>IDESourceControlProjectName</key>
-	<string>CalculatorApp</string>
+	<string>multitabApplication</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>A5523B0E107279B3AA3C807B5B5B44BD933580C9</key>
 		<string>https://github.com/argiacomi/iPhone-Apps.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>CalculatorApp/CalculatorApp.xcodeproj</string>
+	<string>multitabApplication/multitabApplication.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>A5523B0E107279B3AA3C807B5B5B44BD933580C9</key>
