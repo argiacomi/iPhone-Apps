@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ScrollViewController : UIViewController <UIScrollViewDelegate>
-{
+@interface ScrollViewController : UIViewController <UIScrollViewDelegate> {
     NSInteger selectedButton;
     UIImage *image;
 }

@@ -1,5 +1,5 @@
 //
-//  Header.h
+//  CourseDetailViewController.h
 //  multiTabApp
 //
 //  Created by Andrew Giacomi on 3/1/15.
@@ -8,10 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ButtonViewController : UIViewController {
-    NSString *pressed;
-}
+@interface CourseDetailViewController : UIViewController
 
-- (IBAction)buttonPressed:(id)sender;
+@property (strong, nonatomic) NSDictionary *listDetails;
+
 
 @end

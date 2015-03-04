@@ -1,5 +1,5 @@
 //
-//  Header.h
+//  CourseListViewController.h
 //  multiTabApp
 //
 //  Created by Andrew Giacomi on 3/1/15.
@@ -8,10 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ButtonViewController : UIViewController {
-    NSString *pressed;
-}
-
-- (IBAction)buttonPressed:(id)sender;
+@interface CourseListViewController : UITableViewController
 
 @end

@@ -11,13 +11,16 @@
 		7689841A1AA2F78100F4006A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 768984191AA2F78100F4006A /* AppDelegate.m */; };
 		7689841D1AA2F78100F4006A /* multiTabApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7689841B1AA2F78100F4006A /* multiTabApp.xcdatamodeld */; };
 		768984201AA2F78100F4006A /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7689841F1AA2F78100F4006A /* ScrollViewController.m */; };
-		768984251AA2F78100F4006A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 768984241AA2F78100F4006A /* Images.xcassets */; };
 		768984281AA2F78100F4006A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 768984261AA2F78100F4006A /* LaunchScreen.xib */; };
 		768984341AA2F78100F4006A /* multiTabAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 768984331AA2F78100F4006A /* multiTabAppTests.m */; };
 		768984421AA2F80500F4006A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7689843D1AA2F80500F4006A /* Main.storyboard */; };
 		768984431AA2F80500F4006A /* CalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7689843F1AA2F80500F4006A /* CalculatorViewController.m */; };
 		768984441AA2F80500F4006A /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 768984411AA2F80500F4006A /* Calculator.m */; };
 		768984471AA3168300F4006A /* ButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 768984461AA3168300F4006A /* ButtonViewController.m */; };
+		76C8D4611AA3C5A500F9064D /* CourseList.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C8D4601AA3C5A500F9064D /* CourseList.m */; };
+		76C8D4631AA3C9B700F9064D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76C8D4621AA3C9B700F9064D /* Images.xcassets */; };
+		76C8D4A71AA3D17400F9064D /* CourseListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C8D4A61AA3D17400F9064D /* CourseListViewController.m */; };
+		76C8D4AA1AA3FD5200F9064D /* CourseDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C8D4A91AA3FD5200F9064D /* CourseDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +42,6 @@
 		7689841C1AA2F78100F4006A /* multiTabApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = multiTabApp.xcdatamodel; sourceTree = "<group>"; };
 		7689841E1AA2F78100F4006A /* ScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollViewController.h; sourceTree = "<group>"; };
 		7689841F1AA2F78100F4006A /* ScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollViewController.m; sourceTree = "<group>"; };
-		768984241AA2F78100F4006A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		768984271AA2F78100F4006A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		7689842D1AA2F78100F4006A /* multiTabAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = multiTabAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		768984321AA2F78100F4006A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +53,13 @@
 		768984411AA2F80500F4006A /* Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
 		768984451AA3163400F4006A /* ButtonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ButtonViewController.h; sourceTree = "<group>"; };
 		768984461AA3168300F4006A /* ButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonViewController.m; sourceTree = "<group>"; };
+		76C8D45F1AA3C5A500F9064D /* CourseList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseList.h; sourceTree = "<group>"; };
+		76C8D4601AA3C5A500F9064D /* CourseList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseList.m; sourceTree = "<group>"; };
+		76C8D4621AA3C9B700F9064D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		76C8D4A51AA3D17400F9064D /* CourseListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CourseListViewController.h; path = ../CourseListViewController.h; sourceTree = "<group>"; };
+		76C8D4A61AA3D17400F9064D /* CourseListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CourseListViewController.m; path = ../CourseListViewController.m; sourceTree = "<group>"; };
+		76C8D4A81AA3FD5200F9064D /* CourseDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseDetailViewController.h; sourceTree = "<group>"; };
+		76C8D4A91AA3FD5200F9064D /* CourseDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +110,13 @@
 				768984461AA3168300F4006A /* ButtonViewController.m */,
 				7689841E1AA2F78100F4006A /* ScrollViewController.h */,
 				7689841F1AA2F78100F4006A /* ScrollViewController.m */,
-				768984241AA2F78100F4006A /* Images.xcassets */,
+				76C8D4A51AA3D17400F9064D /* CourseListViewController.h */,
+				76C8D4A61AA3D17400F9064D /* CourseListViewController.m */,
+				76C8D4A81AA3FD5200F9064D /* CourseDetailViewController.h */,
+				76C8D4A91AA3FD5200F9064D /* CourseDetailViewController.m */,
+				76C8D45F1AA3C5A500F9064D /* CourseList.h */,
+				76C8D4601AA3C5A500F9064D /* CourseList.m */,
+				76C8D4621AA3C9B700F9064D /* Images.xcassets */,
 				768984261AA2F78100F4006A /* LaunchScreen.xib */,
 				7689841B1AA2F78100F4006A /* multiTabApp.xcdatamodeld */,
 				768984141AA2F78100F4006A /* Supporting Files */,
@@ -217,9 +232,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76C8D4631AA3C9B700F9064D /* Images.xcassets in Resources */,
 				768984421AA2F80500F4006A /* Main.storyboard in Resources */,
 				768984281AA2F78100F4006A /* LaunchScreen.xib in Resources */,
-				768984251AA2F78100F4006A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,9 +253,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7689841D1AA2F78100F4006A /* multiTabApp.xcdatamodeld in Sources */,
+				76C8D4AA1AA3FD5200F9064D /* CourseDetailViewController.m in Sources */,
+				76C8D4A71AA3D17400F9064D /* CourseListViewController.m in Sources */,
 				7689841A1AA2F78100F4006A /* AppDelegate.m in Sources */,
 				768984471AA3168300F4006A /* ButtonViewController.m in Sources */,
 				768984431AA2F80500F4006A /* CalculatorViewController.m in Sources */,
+				76C8D4611AA3C5A500F9064D /* CourseList.m in Sources */,
 				768984441AA2F80500F4006A /* Calculator.m in Sources */,
 				768984201AA2F78100F4006A /* ScrollViewController.m in Sources */,
 				768984171AA2F78100F4006A /* main.m in Sources */,
@@ -428,6 +446,7 @@
 				768984391AA2F78100F4006A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7689843A1AA2F78100F4006A /* Build configuration list for PBXNativeTarget "multiTabAppTests" */ = {
 			isa = XCConfigurationList;
@@ -436,6 +455,7 @@
 				7689843C1AA2F78100F4006A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -36,7 +36,7 @@ int n = 0;
     return self;
 }
 
-- (void)calculatorOperations:(NSString *)buttonPressed{
+- (void)calculatorOperations:(NSString *)buttonPressed {
 
 
     if ([numbers rangeOfString: buttonPressed].length) {
