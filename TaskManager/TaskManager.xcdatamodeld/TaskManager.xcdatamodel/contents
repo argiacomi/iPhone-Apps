@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6751" systemVersion="14C1514" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Subtask" representedClassName="TaskManager.Subtask" syncable="YES">
+        <attribute name="deadline" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="done" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <relationship name="myTask" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Task" inverseName="mySubtasks" inverseEntity="Task" syncable="YES"/>
+    </entity>
+    <entity name="Task" representedClassName="TaskManager.Task" syncable="YES">
+        <attribute name="deadline" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="done" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <relationship name="mySubtasks" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Subtask" inverseName="myTask" inverseEntity="Subtask" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Subtask" positionX="124" positionY="-9" width="128" height="103"/>
+        <element name="Task" positionX="-137" positionY="-9" width="128" height="103"/>
+    </elements>
+</model>
